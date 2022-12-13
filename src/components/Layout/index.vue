@@ -114,6 +114,7 @@ export default {
     },
     toggleLang(lang) {
       this.$i18n.locale = lang
+      localStorage.setItem('language', lang)
     },
   },
 }
